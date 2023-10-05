@@ -5,9 +5,65 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: lightgray; */
+  background-image: url(/src/media/shopping_mall.png);
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+h1{
+  text-align: center;
+  margin: 20px;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid;
+  width: 300px;
+  height: fit-content;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.image{
+  width: 250px;
+  margin: 10px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: contain; /* To ensure the image covers the area without distortion */
+}
+
+.btn-cart{
+  background: url(/src/media/cart.png) no-repeat center center;
+  background-size: contain;
+  border: none;
+  padding: 10px 20px;
+  width: 500px;
+  height: 500px;
+  margin: 100px 0 0 150px;
+}
+.btn-add{
+  background: url(/src/media/add_to_cart.png);
+  background-size: cover;
+  height: 60px;
+  width: 50%;
+}
+.btn-back{
+  border-radius: 25px;
+  font-weight: 700;
+}
+
+.container{
+  margin: auto;
 }
